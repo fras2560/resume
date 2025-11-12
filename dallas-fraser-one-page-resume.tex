@@ -6,6 +6,8 @@
   linkcolor=grey,
   urlcolor=black}
 
+\input{shared-info}  
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -23,23 +25,21 @@
 
 
 \namesection{Dallas}{Fraser}{ 
-\href{mailto:dallas.fraser.waterloo@gmail.com}{dallas.fraser.waterloo@gmail.com} | 289.242.4248
+  \contactinfo
 }
 \\
-\urlstyle{same}\url{https://github.com/fras2560}
 
 \section{Skills}
-\vspace{\topsep}
 \runsubsection{Languages:}
-Python, Java, SQL, C\#, TypeScript, JavaScript,
+\programminglanguages
 \sectionsep
 \\
 \runsubsection{Web Development:}
-HTML, HTMX, CSS, Flask, Webpack, SQLAlchemy, Angular, React, Vue
+\webdevelopment
 \sectionsep
 \\
-\runsubsection{Tooling:}
-Git, Heroku, Lucene, Docker, Azure, Electron, Flutter
+\runsubsection{Tools and Frameworks:}
+\toolsandframeworks
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     WORK
@@ -47,40 +47,9 @@ Git, Heroku, Lucene, Docker, Azure, Electron, Flutter
 
 \section{Experience}
 \vspace{\topsep}
-\runsubsection{Mosaic Manufacturing}
-\descript{| Senior Software Developer}
-\location{March 2024 – November 2025 | Toronto, ON}
-\begin{tightemize}
-\item Built and delivered an offline desktop application in 9 months which unlocked customers with IP concerns
-\item Created a continuous integration pipeline with unit/e2e tests that ensured requirements were met and maintained
-\item Developed and implemented processes to enable code to be shared between cloud product and offline application
-\item Made open source contributions to \href{https://github.com/electron/forge/pull/3674}{\underline{Electron}} and a \href{https://github.com/scniro/react-codemirror2/pull/326}{\underline{React library}} for issues blocking the project from proceeding
-\item Development included Typescript, React, Electron, PrusaSlicer, Github Actions
-\end{tightemize}
-\sectionsep
-
-
-\runsubsection{Knowledgehook}
-\descript{| Full-Stack Developer}
-\location{October 2020 – February 2024 | Waterloo, ON}
-\begin{tightemize}
-\item Built cross-platform mobile applications using Flutter to enhance student experience on school hardware
-\item Developed internal tools which enabled customer support to respond to teachers' problems and requests
-\item Investigating and patched production issues to allow core team to focus on their sprint cycles
-\item Development included C\#, .NET, Angular, Microsoft Azure, SQL Server
-\end{tightemize}
-\sectionsep
-
-\runsubsection{DigitalEd}
-\descript{| Web Applications Developer}
-\location{June 2018 – September 2020 | Waterloo, ON}
-\begin{tightemize}
-\item Modernized Javascript build process to support Vue and unit testing which improved developer experience and velocity
-\item Led development of a new acceptance test framework with Cypress which improved testing quality and coverage
-\item Made an open source \href{https://github.com/jquery/jquery/commit/a1e619b03a557b47c3e26a5e74af12b63a0d5e73}{\underline{contribution}} to jQuery for a bug that was preventing company from upgrading versions
-\item Development included Java, Cypress, PostGresSQL, Docker, Bitbucket Pipelines
-\end{tightemize}
-\sectionsep
+\mosaic
+\knowledgehook
+\digitaled
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SCHOOL
@@ -89,42 +58,31 @@ Git, Heroku, Lucene, Docker, Azure, Electron, Flutter
 \vspace{\topsep}
 \runsubsection{University of Waterloo}
 \descript{| Computer Science MMath  }
-\location{Graduated May 2018 | Waterloo, ON \textbullet{} Cum. Average 89\%}
+\location{Graduated May 2018 | Waterloo, ON \textbullet{} Recipient of David Cheriton Scholarship}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Supervised by Dr. Frank Tompa and part of Data Systems Group
-\item Built a math information retrieval software {\bf Tangent-L} that improved precision of previous state-of-the art by 10\%
-\item Authored the \href{https://dl.acm.org/doi/abs/10.1145/3209280.3209527}{\underline{``best paper''}} at Document Engineering (DocEng) conference (August 2018, Halifax, NS).
-\item Recipient of David R. Cheriton Graduate Scholarship on the basis of scholastic excellence
+  \item Built math information retrieval system, beating state of the art precision by 10\%, won best paper at DocEng \href{https://uwaterloo.ca/data-systems-group/news/dallas-fraser-andrew-kane-and-frank-tompa-win-best-paper}{\underline{conference}}
+  \item Published multiple peer reviewed papers (See links \href{https://ceur-ws.org/Vol-2936/paper-05.pdf}{\underline{1}}, \href{https://dl.acm.org/doi/abs/10.1145/3209280.3209527}{\underline{2}})
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Wilfrid Laurier University}
 \descript{| Computer Science BSc and Business Administration BBA }
-\location{Graduated Aug 2016 | Waterloo, ON \textbullet{} Cum. Average 85\%}
+\location{Graduated Aug 2016 | Waterloo, ON \textbullet{} High Distinction}
 \begin{tightemize}
-\item Published multiple graph theory papers (See links \href{https://link.springer.com/article/10.1007/s00373-019-02123-1}{1}, \href{https://www.sciencedirect.com/science/article/abs/pii/S0166218X17302925}{2},
-\href{https://www.sciencedirect.com/science/article/abs/pii/S0166218X16304541}{3} and \href{https://link.springer.com/article/10.1007/s00373-018-1925-5}{4})
-\item Graduated with \href{https://academic-calendar.wlu.ca/section.php?cal=1&s=834&sp=2948&ss=3495&y=73}{``High Distinction''}
-\item Completed four co-op terms in a wide range of industries and roles
+  \item Instructional assistant for intro to Python, data structures, and Java; completed 4 co-op terms
+  \item Built a Flask \href{https://induced-subgraph.fly.dev/}{\underline{web application}} for finding induced Subgraphs that speed up research time
+  \item Published multiple graph theory papers (See links \href{https://link.springer.com/article/10.1007/s00373-019-02123-1}{\underline{1}}, \href{https://www.sciencedirect.com/science/article/abs/pii/S0166218X17302925}{\underline{2}},
+    \href{https://www.sciencedirect.com/science/article/abs/pii/S0166218X16304541}{\underline{3}} and \href{https://link.springer.com/article/10.1007/s00373-018-1925-5}{\underline{4}})
 \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
+%     Volunteering
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects}
+\section{Volunteering}
 \vspace{\topsep}
-\runsubsection{Softball League}
-\descript{}
-\location{2016 - Present | Waterloo, ON}
-\begin{tightemize}
-\item Built a \href{https://github.com/fras2560/mlsb-platform}{\underline{softabll website}} that been used by 800+ teams and 16000+ players
-\item APIs provided back-end to \href{https://github.com/fras2560/Facebook-Bot}{\underline{Facebook bot}} clients that was used by hundred of captains to submit scores
-\item Built a CI/CD pipeline using GitHub actions that runs unit and e2e tests ensuring quality and stability in production
-\item Use the project to explore new ideas and approaches
-\item Development includes Flask, Bootstrap, HTMX and SQLAlchemy
-\end{tightemize}
-\sectionsep
+\mlsb
+\glendalerink
 
 \end{document}  \documentclass[]{article}
