@@ -34,16 +34,74 @@
 
 
 \section{Skills}
-\runsubsection{Languages:}
-\programminglanguages
-\sectionsep
-\\
-\runsubsection{Web Development:}
-\webdevelopment
-\sectionsep
-\\
-\runsubsection{Tools and Frameworks:}
-\toolsandframeworks
+\vspace{\topsep}
+
+\ifdefined\backendvariant
+  \ifdefined\dotnetvariant
+    \runsubsection{C\#:}
+    \backendcsharp
+    \sectionsep
+    \\
+  \fi
+
+  \runsubsection{Databases:}
+  \databases
+  \sectionsep
+  \\
+  \runsubsection{Devops:}
+  \devops
+  \sectionsep
+  \\
+
+  \ifdefined\javavariant
+    \runsubsection{Java:}
+    \backendjava
+    \sectionsep
+    \\
+  \fi
+
+  \ifdefined\pythonvariant
+    \runsubsection{Python:}
+    \backendpython
+    \sectionsep
+    \\
+  \fi
+
+  \ifdefined\typescriptvariant
+    \runsubsection{TypeScript:}
+    \backendtypescript
+    \sectionsep
+    \\
+  \fi
+\else
+  \ifdefined\frontendbackend
+    \runsubsection{Frameworks:}
+    \frontendframeworks
+    \sectionsep
+    \\
+    \runsubsection{Testing:}
+    \frontendtesting
+    \sectionsep
+    \\
+    \runsubsection{Tooling and Libraries:}
+    \frontendtoolinglibraries
+    \sectionsep
+    \\
+  \else
+    \runsubsection{Backend:}
+    \webdevelopment
+    \sectionsep
+    \\
+    \runsubsection{Devops:}
+    \devops
+    \sectionsep
+    \\
+    \runsubsection{Frontend:}
+    \frontendframeworks
+    \sectionsep
+    \\
+  \fi
+\fi 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     WORK
