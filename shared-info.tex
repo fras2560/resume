@@ -1,15 +1,37 @@
+\input{jobs/digitaled}
+\input{jobs/lighthouse}
+\input{jobs/knowledgehook}
+\input{jobs/mosaic}
+\input{jobs/validus}
+
+\newcommand{\positiontitles}{
+    \ifdefined\jobposition
+        \jobposition{}
+    \else
+        Software Developer
+    \fi
+}
+
+\newcommand{\previousposition}{
+      \ifdefined\intermediatevariant
+        \positiontitles{}
+      \else 
+        Senior\positiontitles{}
+      \fi
+}
+
 \newcommand{\profilesummary}{
     \begin{flushleft}
-        Independent Senior Software Developer with over 7 years experience developing front-end and back-end solutions, with commitment to continuous professional improvement to software development and testing.
+        \previousposition{}with 8 years experience developing scalable software solutions, with a commitment to learning new things and diving deep into problems.
     \end{flushleft}
 }
 
 \newcommand{\contactinfo}{
-    \href{mailto:dallas.fraser.waterloo@gmail.com}{dallas.fraser.waterloo@gmail.com} | \raisebox{-0.2\height}{\includegraphics[width=0.025\linewidth, height=0.025\linewidth]{github-icon.jpg}}\hspace{0.1cm}\urlstyle{same}\url{fras2560} | 289.242.4248
+    dallas.fraser.waterloo@gmail.com | \raisebox{-0.2\height}{\includegraphics[width=0.025\linewidth, height=0.025\linewidth]{github-icon.jpg}}\hspace{0.1cm}\urlstyle{same}\url{fras2560} | 289.242.4248
 }
 
 \newcommand{\webdevelopment}{
-    C\#, Java, MongoDB, Python, SQL, TypeScript 
+    MongoDB, Python, SQL, TypeScript 
 }
 
 \newcommand{\frontendframeworks}{
@@ -54,51 +76,50 @@
 
 \newcommand{\mosaic}{
     \runsubsection{Mosaic Manufacturing}
-    \descript{| Senior Software Developer}
+    \descript{| \previousposition }
     \location{March 2024 – November 2025 | Remote}
     \begin{tightemize}
-        \item Led the development of an offline desktop application in 9 months to meet the needs of IP-sensitive customers.
-        \item Broke down requirements into manageable deliverables, validated through CI pipelines with jest and playwright tests.
-        \item Mentored front-end developer and reviewed code to improve their testing abilities
-        \item Analyzed and implemented processes to enable code to be shared between cloud product and offline application
-        \item Unblocked project by making open source contributions to \href{https://github.com/electron/forge/pull/3674}{\underline{Electron}} and a \href{https://github.com/scniro/react-codemirror2/pull/326}{\underline{React library}}
-        \item Development included Typescript, React, Redux, Electron, Github Actions, AWS
+        \mosaicprojectlead
+        \mosaicrequirements
+        \mosaicmentoring
+        \mosaicarchitecture
+        \mosaicopensource
     \end{tightemize}
     \sectionsep
 }
 
 \newcommand{\knowledgehook}{
     \runsubsection{Knowledgehook}
-    \descript{| Full-Stack Developer}
+    \descript{| \positiontitles }
     \location{October 2020 – February 2024 | Remote}
     \begin{tightemize}
-        \item Built internal tooling that empowered support teams to respond quickly to teachers’ urgent problems.
-        \item Improved engineering velocity by resolving all production issues, freeing teams to focus on sprint commitments.
-        \item Development included C\#, .NET, Angular, Microsoft Azure, SQL Server
+        \knowledgehookangular
+        \knowledgehooksql
+        \knowledgehookintegrations
+        \knowledgehooktooling
     \end{tightemize}
     \sectionsep
 }
 
 \newcommand{\digitaled}{
     \runsubsection{DigitalEd}
-    \descript{| Web Applications Developer}
+    \descript{| \positiontitles }
     \location{June 2018 – September 2020 | Waterloo, ON}
     \begin{tightemize}
-        \item Improved front-end velocity by modernizing Javascript build process to support Vue and unit testing
-        \item Addressed automated testing quality by leading development of a new e2e testing framework with Cypress
-        \item Addressed XSS security issues discovered by security assessment
-        \item Shipped major jQuery version upgrade by making open source \href{https://github.com/jquery/jquery/commit/a1e619b03a557b47c3e26a5e74af12b63a0d5e73}{\underline{contribution}}
-        \item Development included Java, JavaScript, Cypress, PostgreSQL, Docker, Bitbucket Pipelines, GCP
+        \digitaledvelocity
+        \digitaledtesting
+        \digitaledsecurity
+        \digitaledjquery
     \end{tightemize}
     \sectionsep
 }
 
 \newcommand{\mlsb}{
-    \runsubsection{Softball League Developer}
+    \runsubsection{Softball League - \positiontitles}
     \descript{}
     \location{2016 - Present | Waterloo, ON}
     \begin{tightemize}
-        \item Built and maintain a \href{https://github.com/fras2560/mlsb-platform}{\underline{softball website}} that been used by 400+ teams and 10000+ players
+        \item Built and maintain a softball website that been used by 400+ teams and 10000+ players
         \item Ensure production stability and quality with a Github CI/CD pipeline running automated testing
         \item Work with league convenors to add new features and improvements
     \end{tightemize}
